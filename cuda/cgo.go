@@ -9,6 +9,6 @@ package cuda
 #cgo !windows pkg-config: opencv4
 #cgo CXXFLAGS:   --std=c++11
 #cgo windows  CPPFLAGS:   -IC:/opencv/build/install/include
-#cgo windows  LDFLAGS:    -LC:/opencv/build/install/x64/mingw/lib -lopencv_core490 -lopencv_face490 -lopencv_videoio490 -lopencv_imgproc490 -lopencv_highgui490 -lopencv_imgcodecs490 -lopencv_objdetect490 -lopencv_features2d490 -lopencv_video490 -lopencv_dnn490 -lopencv_xfeatures2d490 -lopencv_plot490 -lopencv_tracking490 -lopencv_img_hash490 -lopencv_calib3d490 -lopencv_bgsegm490 -lopencv_aruco490 -lopencv_wechat_qrcode490 -lopencv_ximgproc490
+#cgo windows  LDFLAGS:    -LC:/opencv/build/install/x64/mingw/lib -lopencv_core410 -lopencv_face410 -lopencv_videoio410 -lopencv_imgproc410 -lopencv_highgui410 -lopencv_imgcodecs410 -lopencv_objdetect410 -lopencv_features2d410 -lopencv_video410 -lopencv_dnn410 -lopencv_xfeatures2d410 -lopencv_plot410 -lopencv_tracking410 -lopencv_img_hash410 -lopencv_calib3d410 -lopencv_bgsegm410 -lopencv_aruco410 -lopencv_wechat_qrcode410 -lopencv_ximgproc410
 */
 import "C"
