@@ -64,7 +64,7 @@ void MorphologyEx(Mat src, Mat dst, int op, Mat kernel);
 void MorphologyExWithParams(Mat src, Mat dst, int op, Mat kernel, Point pt, int iterations, int borderType);
 void MedianBlur(Mat src, Mat dst, int ksize);
 
-void Canny(Mat src, Mat edges, double t1, double t2);
+void Canny(Mat src, Mat edges, double t1, double t2, int apertureSize);
 void CornerSubPix(Mat img, Mat corners, Size winSize, Size zeroZone, TermCriteria criteria);
 void GoodFeaturesToTrack(Mat img, Mat corners, int maxCorners, double quality, double minDist);
 void GrabCut(Mat img, Mat mask, Rect rect, Mat bgdModel, Mat fgdModel, int iterCount, int mode);

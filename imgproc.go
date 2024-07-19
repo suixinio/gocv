@@ -1017,8 +1017,8 @@ func MedianBlur(src Mat, dst *Mat, ksize int) {
 //
 // For further details, please see:
 // http://docs.opencv.org/master/dd/d1a/group__imgproc__feature.html#ga04723e007ed888ddf11d9ba04e2232de
-func Canny(src Mat, edges *Mat, t1 float32, t2 float32) {
-	C.Canny(src.p, edges.p, C.double(t1), C.double(t2))
+func Canny(src Mat, edges *Mat, t1 float32, t2 float32, apertureSize int) {
+	C.Canny(src.p, edges.p, C.double(t1), C.double(t2), C.int(apertureSize))
 }
 
 // CornerSubPix Refines the corner locations. The function iterates to find

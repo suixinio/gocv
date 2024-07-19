@@ -327,8 +327,8 @@ void MedianBlur(Mat src, Mat dst, int ksize) {
     cv::medianBlur(*src, *dst, ksize);
 }
 
-void Canny(Mat src, Mat edges, double t1, double t2) {
-    cv::Canny(*src, *edges, t1, t2);
+void Canny(Mat src, Mat edges, double t1, double t2, int apertureSize) {
+    cv::Canny(*src, *edges, t1, t2, apertureSize);
 }
 
 void CornerSubPix(Mat img, Mat corners, Size winSize, Size zeroZone, TermCriteria criteria) {
